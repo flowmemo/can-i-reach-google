@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="flowmemo">
+  <title>Can I Reach Google</title>
+  <link inline rel="stylesheet" href="../src/style.css">
+  <script inline src="ejs.min.js"></script>
+</head>
+
+<body>
+  <h1>Can I Reach Google?</h1>
+  <h4>author: <a href="https://weibo.com/flowmemo">flowmemo</a></h4>
+  <table>
+    <colgroup>
+      <col class="id">
+      <col class="url">
+      <col class="status">
+    </colgroup>
+    <tr>
+      <th>No.</th>
+      <th>URL</th>
+      <th>Reachable?</th>
+    </tr>
+    <!--
+<tr>
+<td>1</td>
+<td><a href="https://www.google.com/ncr">google.com</a></td>
+<td><img src="https://www.google.com/textinputassistant/tia.png" >loading...</td>
+</tr>
+-->
+  </table>
+  <script id="ejs" type="text/template">
+    <% for(var i = 0; i < googleList.length; i++) { %>
+      <tr>
+        <td>
+          <%= i + 1 %>
+        </td>
+        <td>
+          <a href="https://www.<%= googleList[i] %>/ncr">
+            <%= googleList[i] %>
+          </a>
+        </td>
+        <td> <img src="https://www.<%= googleList[i] %>/textinputassistant/tia.png?p=<%= ''+Date.now()+i %>" onload="success(this)"
+            onerror="fail(this)">loading...</td>
+      </tr>
+      <% } %>
+  </script>
+  <script inline src="app.js"></script>
+
+</body>
+
+</html>

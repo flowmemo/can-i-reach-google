@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 500px;
+  margin: auto auto;
+}
+
+img {
+  width: 0;
+  visibility: hidden;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  margin: auto auto;
+}
+
+.url {
+  width: 50%;
+}
+
+.id,
+.status {
+  width: 25%;
+}
+
+th,
+td {
+  padding-left: 2%;
+}
+
+td {
+  height: 1.5em;
+  background-color: lightgray ;
+}
+
+th {
+  height: 1.5em;
+  background-color: lightblue;
+  text-align: left;
+}
+
+.reachable td {
+  background-color: lightgreen;
+}
+
+.unreachable td {
+  background-color: lightcoral;
+}
+
