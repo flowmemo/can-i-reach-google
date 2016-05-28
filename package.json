@@ -1,13 +1,13 @@
 {
-  "name": "reachable",
+  "name": "can-i-reach-google",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "flowmemo",
+  "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^2.0.0",
