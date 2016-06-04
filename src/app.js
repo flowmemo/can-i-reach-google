@@ -9,7 +9,7 @@ var app = {
   },
   fail: function (img) {
     var td = img.parentElement
-    td.textContent = '☓'
+    td.textContent = '✗'
     td.parentElement.classList.add('unreachable')
   }
 }
