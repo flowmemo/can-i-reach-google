@@ -2,7 +2,7 @@
 测试能否连上Google众多域名.
 
 ## 用法
-打开链接即可.
+打开 http://flowmemo.github.io/can-i-reach-google 即可.
 也可下载仓库根目录下的`index.html`文件, 在本地打开使用.
 
 ## 本地编译
