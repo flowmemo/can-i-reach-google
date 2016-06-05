@@ -21,9 +21,20 @@ var app = {
   var googleList = domainString.split(' .')
   googleList[0] = googleList[0].slice(1)
 
-  var template = document.getElementById('ejs').text
+  var bodyHtml = ''
+  var rowHtml = document.getElementById('tbody').innerHTML
+  var time = Date.now()
+  for (var i = 0, len = googleList.length; i < len; i++) {
+    var row = rowHtml.replace(/@@id@@|@@url@@|@@nocache@@/g, function (match) {
+      var replacer = {
+        '@@id@@': i + 1,
+        '@@url@@': 'https://www.' + googleList[i],
+        '@@nocache@@': '' + time + i
+      }
+      return replacer[match]
+    })
+    bodyHtml += row
+  }
 
-  // ejs version: v2.4.2
-  var value = ejs.render(template, {googleList: googleList})
-  document.getElementsByTagName('table')[0].innerHTML += value
+  document.getElementsByTagName('table')[0].innerHTML += bodyHtml
 })()

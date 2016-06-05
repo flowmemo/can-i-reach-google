@@ -7,7 +7,6 @@
   <meta name="author" content="flowmemo">
   <title>Can I Reach Google?</title>
   <link inline rel="stylesheet" href="../src/style.css">
-  <script inline src="ejs.min.js"></script>
 </head>
 
 <body>
@@ -21,22 +20,19 @@
       <th class="status">Reachable?</th>
     </tr>
   </table>
-  <script id="ejs" type="text/template">
-    <% for(var i = 0; i < googleList.length; i++) { %>
+  <script id="tbody" type="text/template">
       <tr>
         <td>
-          <%= i + 1 %>
+          @@id@@
         </td>
         <td>
-          <% var link = 'https://www.' + googleList[i] + '/ncr'%>
-            <a href="<%= link %>" target="_blank">
-              <%= link %>
+            <a href="@@url@@/ncr" target="_blank">
+              @@url@@/ncr
             </a>
         </td>
-        <td> <img src="https://www.<%= googleList[i] %>/textinputassistant/tia.png?p=<%= ''+Date.now()+i %>" onload="app.success(this)"
+        <td> <img src="@@url@@/textinputassistant/tia.png?p=@@nocache@@" onload="app.success(this)"
             onerror="app.fail(this)">loading...</td>
       </tr>
-      <% } %>
   </script>
   <script inline src="app.js"></script>
 </body>
