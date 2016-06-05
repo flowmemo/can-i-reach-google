@@ -21,7 +21,7 @@ gulp.task('build', ['inline', 'minify-html'], function () {
     .pipe(gulp.dest('./'))
 })
 
-// To use this task you should install browerSync manually: npm install browser-sync
+// To use this task, you should install browserSync manually: npm install browser-sync
 gulp.task('serve', ['build'], function () {
   var browserSync = require('browser-sync').create()
 
