@@ -1,7 +1,7 @@
 {
   "name": "can-i-reach-google",
   "version": "1.0.0",
-  "description": "",
+  "description": "Test if you can reach any domains of Google",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
