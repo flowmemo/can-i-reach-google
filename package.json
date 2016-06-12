@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
     "test": "casperjs test ./test"
   },
   "author": "flowmemo",
