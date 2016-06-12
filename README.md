@@ -1,4 +1,6 @@
 # Can I Reach Google?
+[![Build Status](https://travis-ci.org/flowmemo/can-i-reach-google.svg?branch=master)](https://travis-ci.org/flowmemo/can-i-reach-google)
+
 测试能否连上Google众多域名.
 
 ## 用法
