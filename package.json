@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "casperjs test ./test"
   },
   "author": "flowmemo",
   "license": "MIT",
   "devDependencies": {
+    "casperjs": "^1.1.1",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-inline-source": "^2.1.0"
