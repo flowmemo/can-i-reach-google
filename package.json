@@ -10,7 +10,7 @@
   "author": "flowmemo",
   "license": "MIT",
   "devDependencies": {
-    "casperjs": "^1.1.1",
+    "casperjs": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^2.0.0",
     "gulp-inline-source": "^2.1.0"
