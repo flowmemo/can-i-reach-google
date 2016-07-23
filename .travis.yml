@@ -4,5 +4,9 @@ node_js:
   - '5'
   - '4'
 before_install:
-  - 'npm install -g npm@latest'
+  - npm set progress=false
+  - npm install -g npm@latest
 script: npm run build && npm test
+cache:
+  directories:
+  - node_modules
