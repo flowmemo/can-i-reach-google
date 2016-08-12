@@ -13,6 +13,6 @@
     "casperjs": "^1.1.3",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^2.0.0",
-    "gulp-inline-source": "^2.1.0"
+    "gulp-inline-source": "^3.0.0"
   }
 }
