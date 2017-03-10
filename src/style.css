@@ -6,6 +6,7 @@ body {
   width: 100%;
   max-width: 500px;
   margin: auto auto;
+  font-family: Sans-Serif;
 }
 
 img {
@@ -20,7 +21,7 @@ p {
 
 table {
   width: 100%;
-  margin: auto auto;
+  margin: auto auto 2em auto;
 }
 
 .url {
