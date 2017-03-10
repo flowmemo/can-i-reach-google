@@ -11,7 +11,7 @@
 `clone`这个仓库, `cd`到仓库的文件夹, 然后
 ``` bash
 npm install
-gulp build
+npm run build
 ```
 
 ## 开源许可
