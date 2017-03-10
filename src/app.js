@@ -1,5 +1,6 @@
-'use strict'
 /*eslint no-unused-vars: ["error", { "varsIgnorePattern": "app" }]*/
+'use strict'
+
 var app = {
   success: function (img) {
     var td = img.parentElement

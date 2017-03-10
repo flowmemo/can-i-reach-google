@@ -1,5 +1,6 @@
-'use strict'
 /* global casper */
+
+'use strict'
 casper.test.begin('e2e test', 3, function suite (test) {
   casper.start('index.html')
 
