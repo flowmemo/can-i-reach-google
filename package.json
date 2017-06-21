@@ -10,10 +10,10 @@
   "author": "flowmemo",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.18.8",
-    "casperjs": "^1.1.3",
+    "browser-sync": "^2.18.12",
+    "casperjs": "^1.1.4",
     "gulp": "^3.9.1",
     "gulp-htmlmin": "^3.0.0",
-    "gulp-inline-source": "^3.0.0"
+    "gulp-inline-source": "^3.1.0"
   }
 }
